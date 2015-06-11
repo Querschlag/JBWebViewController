@@ -16,7 +16,7 @@
 #import <NJKWebViewProgress/NJKWebViewProgress.h>
 #import <NJKWebViewProgress/NJKWebViewProgressView.h>
 
-@interface JBWebViewController : UIViewController <UIWebViewDelegate, NJKWebViewProgressDelegate>
+@interface JBWebViewController : UIViewController <UIWebViewDelegate, NJKWebViewProgressDelegate, WKNavigationDelegate>
 
 // Typedef for completion block
 typedef void (^completion)(JBWebViewController *controller);
@@ -25,7 +25,8 @@ typedef void (^completion)(JBWebViewController *controller);
 @property (nonatomic, strong) NSString *loadingString;
 
 // Public variables
-@property (nonatomic, strong) UIWebView *webView;
+//@property (nonatomic, strong) WKWebView *wkWebView;
+@property (nonatomic, strong) WKWebView *webView;
 @property (nonatomic, assign) BOOL hideAddressBar;
 
 // Public header methods
