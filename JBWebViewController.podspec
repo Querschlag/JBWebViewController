@@ -28,5 +28,5 @@ Pod::Spec.new do |s|
   s.weak_framework = 'WebKit'
   s.requires_arc = true
   s.dependency 'ARChromeActivity', '1.0.5'
-  s.dependency 'ARSafariActivity', '0.0.1'
+  s.dependency 'ARSafariActivity', '0.0.3'
 end
